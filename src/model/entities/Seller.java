@@ -71,6 +71,19 @@ public class Seller implements Serializable {
         this.department = department;
     }
 
+    
+
+
+    @Override
+    public String toString() {
+        return "Seller id: " + id + "\n"
+       + "Name: " + name + "\n"
+       + "Email: " + email + "\n"
+       + "BirthDate: " + birthDate + "\n"
+       + "BaseSalary: " + baseSalary + "\n" 
+       + "Department: " + department + " ";
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
