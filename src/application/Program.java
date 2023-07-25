@@ -7,7 +7,6 @@ import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
-
 public class Program {
     public static void main(String[] args) {
         SellerDao sellerDao = DaoFactory.createSellerDao();
@@ -23,6 +22,15 @@ public class Program {
         for (Seller obj : list) {
             System.out.println(obj);
             System.out.println();
+        }
+
+        System.out.println();
+        System.out.println("===TEST 3===");
+
+        list = sellerDao.findAll();
+        for (Seller obj : list) {
+            System.out.println(obj);
+            System.out.println("-----------");
         }
 
     }
